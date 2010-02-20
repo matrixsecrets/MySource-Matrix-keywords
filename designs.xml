@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<design_areas>
+    <design_area type="page_body"><![CDATA[<MySource_AREA id_name="page_body" design_area="body" />]]></design_area>
+    <design_area type="page_body (text only)"><![CDATA[
+<MySource_AREA id_name="page_body" design_area="body"> 
+  <MySource_SET name="format" value="Text" /> 
+</MySource_AREA>
+    ]]></design_area>
+    <design_area type="metadata"><![CDATA[
+<!-- print all metadata -->
+<MySource_AREA id_name="metadata_all" design_area="metadata" /> 
+
+<!-- print a single metadata field -->
+<MySource_AREA id_name="metadata_field" design_area="metadata"> 
+  <MySource_SET name="metadata_field" value="keywords" /> 
+</MySource_AREA>
+    ]]></design_area>
+    <design_area type="nest_content"><![CDATA[
+<MySource_AREA id_name="nested_example" design_area="nest_content"> 
+  <MySource_SET name="type_codes" value="page" /> 
+</MySource_AREA>
+    ]]></design_area>
+    <design_area type="linked_css"><![CDATA[
+<MySource_AREA id_name="css_main" design_area="linked_css"> 
+  <MySource_SET name="tag_type" value="import_tag" /> 
+  <MySource_SET name="media" value="screen" /> 
+</MySource_AREA>
+    ]]></design_area>
+    <design_area type="constant_button"><![CDATA[
+<MySource_AREA id_name="link_section" design_area="constant_button"> 
+  <a <MySource_PRINT var='href' />>Privacy Policy</a> 
+</MySource_AREA>   
+    ]]></design_area>
+    <design_area description="Common breadcrumbs (ie. where you are)" type="asset_lineage"><![CDATA[
+<MySource_AREA id_name="breadcrumbs" design_area="asset_lineage"> 
+  <MySource_SET name="levels_to_print"          value="0" /> 
+  <MySource_SET name="prefix_with_home_link"    value="true" /> 
+  <MySource_SET name="suffix_with_current_link" value="true" /> 
+  <MySource_SET name="prefix_with_divider"      value="true" /> 
+  <MySource_SET name="suffix_with_divider"      value="false" /> 
+  <MySource_SET name="unwanted_asset_types"     value="user folder" /> 
+  <MySource_SET name="reverse_lineage"          value="false" /> 
+  <MySource_ASSET><a href="<MySource_PRINT var='asset_link' />"><MySource_PRINT var='asset_short_name' /></a></MySource_ASSET> 
+  <MySource_DIVIDER><span>&gt;</span></MySource_DIVIDER>
+</MySource_AREA>
+    ]]></design_area>
+    <design_area description="Real breadcrumbs (ie. where you have been)" type="access_history"><![CDATA[
+<MySource_AREA design_area="access_history" id_name="back_to_pages"> 
+  <MySource_ASSET><MySource_PRINT var="asset_short_name_linked" /></MySource_ASSET> 
+</MySource_AREA>
+    ]]></design_area>
+    <design_area description="Menu/navigation (3 level)" type="menu_normal"><![CDATA[
+<MySource_AREA id_name="main_menu" design_area="menu_normal">
+<ul><!-- BEGIN LEVEL 1 -->
+<MySource_SET name="level"                    value="top" />
+<MySource_SET name="show_subs"                value="on_current" />
+<MySource_SET name="settings.class.normal"    value="" />
+<MySource_SET name="settings.class.current"   value="current" />
+<MySource_SET name="settings.class.hierarchy" value="current" />
+
+    <MySource_ASSET>
+    <li class="<MySource_PRINT var="settings.class" />">
+    <MySource_PRINT var="asset_short_name_linked" />
+
+        <ul><!-- BEGIN LEVEL 2 -->
+        <MySource_SUB design_area="menu_normal">
+        <MySource_SET name="show_subs"                value="on_current" />
+        <MySource_SET name="settings.class.normal"    value="" />
+        <MySource_SET name="settings.class.current"   value="current" />
+        <MySource_SET name="settings.class.hierarchy" value="current" />
+
+            <MySource_ASSET>
+            <li class="<MySource_PRINT var="settings.class" />">
+            <MySource_PRINT var="asset_short_name_linked" />
+
+                <ul><!-- BEGIN LEVEL 3 -->
+                <MySource_SUB design_area="menu_normal">
+                <MySource_SET name="show_subs"                value="on_current" />
+                <MySource_SET name="settings.class.normal"    value="" />
+                <MySource_SET name="settings.class.current"   value="current" />
+                <MySource_set name="settings.class.hierarchy" value="current" />
+
+                    <MySource_ASSET>
+                    <li class="<mysource_print var="settings.class" />">
+                    <mysource_print var="asset_short_name_linked" />
+                    </li>
+                    </MySource_asset>
+
+                </MySource_SUB>
+                </ul><!-- END LEVEL 3 -->                         
+
+            </li>
+            </MySource_ASSET>
+
+        </MySource_SUB>
+        </ul><!-- END LEVEL 2 -->
+
+    </li>
+    </MySource_ASSET>
+
+</ul><!-- END LEVEL 1 -->
+</MySource_AREA>
+    ]]></design_area>
+    <design_area type="search_box"><![CDATA[
+<!-- substitute ZZZZ for the field name associated with the Search Page -->
+<!-- substitute XXXX for the asset id of the Search Page asset -->
+<MySource_AREA id_name="search_form" design_area="searchbox">
+    <MySource_SET var="field_name"          value="ZZZZ" />
+    <MySource_SET var="search_page_assetid" value="XXXX" />
+    <MySource_SET var="default_text"        value="" />
+    <MySource_SET var="submit_button"       value="false" />
+    <MySource_SET var="submit_image_assetid value="" />
+    <MySource_PRINT var="form_start" />
+        <div id="search_form">
+            <MySource_PRINT var="category_list" /> 
+            <label for="queries_ZZZZ_query">Search</label>
+            <MySource_PRINT var="box" /> 
+            <span class="submit"><MySource_PRINT var="submit" /></span>
+        </div>
+    <MySource_PRINT var="form_end" /> 
+</MySource_AREA>    
+    ]]></design_area>
+    <design_area type="show_if"><![CDATA[
+<MySource_AREA id_name="logged_in" design_area="show_if">
+    <MySource_SET name="condition" value="logged_in" /> 
+    <!--<MySource_SET name="condition" value="simple_edit_mode" />-->
+    <!--<MySource_SET name="condition" value="write_access" />-->
+    <!--<MySource_SET name="condition" value="admin_access" />-->
+    <!--<MySource_SET name="condition" value="server_variable" />-->
+    <!--    <MySource_SET name="condition_server_variable" value="HTTP_ACCEPT_LANGUAGE" />-->
+    <!--    <MySource_SET name="condition_server_variable_match" value="en" />-->
+    <!--    condition_server_var: http://php.net/manual/en/reserved.variables.server.php -->
+    <MySource_THEN>You are logged in</MySource_THEN> 
+    <MySource_ELSE>
+        <p>You are not logged in</p>
+        <!-- Print the login form that is otherwise hidden through print="no" -->
+        <MySource_PRINT id="login_form" />
+    </MySource_ELSE> 
+</MySource_AREA> 
+    ]]></design_area>
+    <design_area type="request_vars"><![CDATA[
+<MySource_AREA id_name="vars_example" design_area="request_vars"> 
+    <MySource_SET name="method" value="get" />
+</MySource_AREA>
+
+<!-- print a single value from the request_vars array -->
+<MySource_PRINT id_name="vars_example" var="get_variable_name" />
+    ]]></design_area>
+    <design_area type="login_form"><![CDATA[
+<MySource_AREA id_name="login_form" design_area="login_form"> 
+    <MySource_PRINT var="referer" />
+    <MySource_PRINT var="system_messages" />
+    <MySource_PRINT var="login_heading" /> 
+    <MySource_LOGIN_SECTION> 
+        <MySource_SET name="give_username_focus" value="false" /> 
+        <MySource_SET name="forward_www_vars"    value="true" /> 
+        <MySource_PRINT var="form_open" /> 
+        <div id="login">
+            <MySource_PRINT id_name="__global__" var="current_user" 
+default="Not logged in" attr="name" /> 
+            <MySource_PRINT var="login_message" /> 
+            <MySource_PRINT var="username_box" class="username" /> 
+            <MySource_PRINT var="password_box" class="password" />
+            <MySource_PRINT var="submit_button" value="Login" class="submit" /> 
+        </div>
+        <MySource_PRINT var="form_close" /> 
+    </MySource_LOGIN_SECTION> 
+    <MySource_LOGOUT_SECTION> 
+        <MySource_PRINT var="form_open" />
+        <div id="login">
+            <MySource_PRINT id_name="__global__" var="current_user" 
+default="Not logged in" attr="name" /> 
+            <MySource_PRINT var="submit_button" value="Logout" class="submit" /> 
+        </div>
+        <MySource_PRINT var="form_close" /> 
+    </MySource_LOGOUT_SECTION> 
+</MySource_AREA>
+    ]]></design_area>
+    <design_area description="Let the Calendar asset print its own CSS" type="head"><![CDATA[
+<MySource_AREA design_area="head" id_name="head" />
+    ]]></design_area>
+    <design_area type="js_calendar_navigator"><![CDATA[
+    <MySource_AREA id_name="cal_nav" design_area="js_calendar_navigator" />
+    ]]></design_area>
+</design_areas>
