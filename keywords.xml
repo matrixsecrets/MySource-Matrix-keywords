@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<assets>
+    <asset type="Anywhere (global) keywords">
+        <keyword id="%globals_X%">
+            <X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
+            <description>A meta-keyword which allows you to list (nearly) any keyword for the current asset.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+        </keyword>
+        <keyword id="%globals_asset_attribute_X%">
+            <X>Any keyword in 'Attribute Keywords'</X>
+            <description>A more specific version of %globals_X% used for asset attributes.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+        </keyword>
+	<keyword id="%globals_asset_attribute_X:Y%">
+		<X>Any keyword in 'Attribute Keywords'</X>
+		<Y>A specific asset id</Y>
+		<description>A more specific version of %globals_asset_attribute_X% used for listing an asset attribute for the asset ID specified in Y.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+	</keyword>
+        <keyword id="%globals_site_X%">
+            <X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
+            <description>A meta-keyword which allows you to list (nearly) any keyword for the current site.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+        </keyword>
+        <keyword id="%globals_user_X%">
+            <X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
+            <description>A meta-keyword which allows you to list (nearly) any keyword for the current user</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+        </keyword>
+        <keyword id="%globals_date_X%">
+            <X>PHP date format</X>
+            <description>Prints the current server date and time. Date and time can be formatted by replacing X with a <![CDATA[<a href="http://au2.php.net/date#function.date.parameters">PHP formatted</a> server date/time]]>, for example %globals_date_M% prints the three letter representation of the current month.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.1-3.20.2">3.20.2+</a>]]></version>
+        </keyword>
+        <keyword id="%globals_get_X%">
+            <X>Query string/get variable name (eg. ?X=something)</X>
+            <description>Non-array value of a GET variable.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+        </keyword>
+        <keyword id="%globals_post_X%">
+            <X>POST variable name (ie. from the input of the submitting form)</X>
+            <description>Non-array value of a POST variable.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.18.x-3.20.0RC1">3.20.0+</a>]]></version>
+        </keyword>
+	<keyword id="%globals_server_X%">
+	    <X>PHP Server Variable</X>
+	    <description><![CDATA[Value of <a href="http://php.net/manual/en/reserved.variables.server.php">PHP Server Variable</a>]]></description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+	</keyword>
+	<keyword id="%globals_session_X%">
+		<X>Session variable name</X>
+		<description>Session var. from Matrix sandbox</description>
+	</keyword>
+	<keyword id="%globals_cookie_X%">
+		<X>Cookie variable name</X>
+		<description>Variable from the current user's cookies.</description>
+                <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0+</a>]]></version>
+	</keyword>
+	<keyword id="%globals_random%">
+		<description>Random whole (integer) number.</description>
+	</keyword>
+	<keyword id="%globals_random_X_Y%">
+		<X>Start of the random number range</X>
+		<Y>End of the random number range</Y>
+		<description>Randomly generated number (X to Y). For example, to generate a random number from 1 to 10 use %globals_random_1_10%.</description>
+		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.20.x-3.22.0RC1">3.22.0+</a>]]></version>
+	</keyword>
+	<keyword id="%globals_asset_charset%">
+		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.5-3.20.6">3.20.6+</a>]]></version>
+	</keyword>
+	<keyword id="%globals_asset_languages%">
+		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.5-3.20.6">3.20.6+</a>]]></version>
+	</keyword>
+	<keyword id="%nested_asset_X%">
+		<X>Refer to any keyword of nested asset</X>
+	</keyword>
+	<keyword id="%referring_X%">
+		<X>Any keyword in 'Common Asset Keywords'</X>
+		<description>Keyword of referring asset</description>
+	</keyword>
+
+    </asset>
+    <asset type="Common Asset Keywords">
+        <keyword id="%asset_assetid%">
+            <description>The unique ID of the current asset</description>
+        </keyword>
+        <keyword id="%asset_name%"><description></description></keyword>
+        <keyword id="%asset_short_name%"></keyword>
+        <keyword id="%asset_type%">
+            <description>Type code (eg. page_standard)</description>
+        </keyword>
+        <keyword id="%asset_url%">
+            <description>Full web address of the current asset</description>
+        </keyword>
+        <keyword id="%asset_href%">
+            <description>"Web path" of the current asset (ie. relative href/link)</description>
+        </keyword>
+        <keyword id="%asset_thumbnail%">
+            <description>IMG tag for the thumbnail for this asset</description>
+        </keyword>
+        <keyword id="%asset_thumbnail_alt%">
+            <description>ALT attribute of Thumbnail</description>
+        </keyword>
+        <keyword id="%asset_thumbnail_url%">
+            <description>URL to the image for the thumbnail for this asset</description>
+        </keyword>
+        <keyword id="%asset_thumbnail_caption%">
+            <description>Caption of the thumbnail for this asset</description>
+        </keyword>
+	<keyword id="%asset_metadata_X%">
+		<X>Metadata field name</X>
+	</keyword>
+	<keyword id="%metadata_field_X%">
+		<X>Value of another metadata field to insert into the current metadata field</X>
+		<description>Insert other metadata field value</description>
+	</keyword>
+    </asset>
+    <asset type="Less Common Asset Keywords">
+        <keyword id="%asset_created_by_name%"></keyword>
+        <keyword id="%asset_created_by_assetid%"></keyword>
+        <keyword id="%asset_created_by_url%"></keyword>
+        <keyword id="%asset_published_by_name%"></keyword>
+        <keyword id="%asset_status_changed_by_name%"></keyword>
+        <keyword id="%asset_status_description%"></keyword>
+        <keyword id="%asset_status_colour%"></keyword>
+        <keyword id="%asset_thumbnail_v_X%">
+            <X>Variety name</X>
+        </keyword>
+        <keyword id="%asset_updated_by_name%"></keyword>
+        <keyword id="%asset_version%"></keyword>
+        <keyword id="%asset_version_major%"></keyword>
+        <keyword id="%asset_version_minor%"></keyword>
+        <keyword id="%asset_version_micro%"></keyword>
+    </asset>
+    <asset type="Date Keywords">
+        <keyword id="%asset_created_X%">
+            <X>PHP formatted date</X>
+            <description><![CDATA[<a href="http://au2.php.net/date#function.date.parameters">PHP formatted date</a> the asset was created]]></description>
+        </keyword>
+        <keyword id="%asset_updated_X%">
+            <X>PHP formatted date</X>
+            <description><![CDATA[<a href="http://au2.php.net/date#function.date.parameters">PHP formatted date</a> the asset was created]]></description>
+        </keyword>
+        <keyword id="%asset_published_X%">
+            <X>PHP formatted date</X>
+            <description><![CDATA[<a href="http://au2.php.net/date#function.date.parameters">PHP formatted date</a> the asset was created]]></description>
+        </keyword>
+        <keyword id="%asset_created%"></keyword>
+        <keyword id="%asset_updated%"></keyword>
+        <keyword id="%asset_created_short%"></keyword>
+        <keyword id="%asset_updated_short%"></keyword>
+        <keyword id="%asset_created_readable%"></keyword>
+        <keyword id="%asset_updated_readable%"></keyword>
+        <keyword id="%asset_created_readabledate%"></keyword>
+        <keyword id="%asset_updated_readabledate%"></keyword>
+        <keyword id="%asset_created_readabletime%"></keyword>
+        <keyword id="%asset_updated_readabletime%"></keyword>
+        <keyword id="%asset_created_iso8601%"></keyword>
+        <keyword id="%asset_updated_iso8601%"></keyword>
+        <keyword id="%asset_created_rfc2822%"></keyword>
+        <keyword id="%asset_updated_rfc2822%"></keyword>
+        <keyword id="%asset_created_ical%"></keyword>
+        <keyword id="%asset_updated_ical%"></keyword>
+        <keyword id="%asset_published%"></keyword>
+        <keyword id="%asset_published_short%"></keyword>
+        <keyword id="%asset_published_readable%"></keyword>
+        <keyword id="%asset_published_readabledate%"></keyword>
+        <keyword id="%asset_published_readabletime%"></keyword>
+        <keyword id="%asset_published_iso8601%"></keyword>
+        <keyword id="%asset_published_rfc2822%"></keyword>
+        <keyword id="%asset_published_ical%"></keyword>
+        <keyword id="%asset_status_changed%"></keyword>
+        <keyword id="%asset_status_changed_short%"></keyword>
+        <keyword id="%asset_status_changed_readable%"></keyword>
+        <keyword id="%asset_status_changed_readabledate%"></keyword>
+        <keyword id="%asset_status_changed_readabletime%"></keyword>
+        <keyword id="%asset_status_changed_iso8601%"></keyword>
+        <keyword id="%asset_status_changed_rfc2822%"></keyword>
+        <keyword id="%asset_status_changed_ical%"></keyword>
+    </asset>
+    <asset type="Permissions Keywords">
+	<keyword id="%asset_read_permission%">
+		<description>Comma separated list of the full names for users with read access</description>
+	</keyword>
+	<keyword id="%asset_write_permission%">
+		<description>Comma separated list of the full names for users with write access</description>
+	</keyword>
+	<keyword id="%asset_admin_permission%">
+		<description>Comma separated list of the full names for users with administrator access</description>
+	</keyword>
+	<keyword id="%asset_read_permission_email%">
+		<description>Comma separated list of email addresses for users with read access</description>
+	</keyword>
+	<keyword id="%asset_write_permission_email%">
+		<description>Comma separated list of email addresses for users with write access</description>
+	</keyword>
+	<keyword id="%asset_admin_permission_email%">
+		<description>Comma separated list of email addresses for users with administrator access</description>
+	</keyword>
+	<keyword id="%asset_read_permission_email_linked%">
+		<description>Comma separated list of linked email addresses for users with read access</description>
+	</keyword>
+	<keyword id="%asset_write_permission_email_linked%">
+		<description>Comma separated list of linked email addresses for users with write access</description>
+	</keyword>
+	<keyword id="%asset_admin_permission_email_linked%">
+		<description>Comma separated list of linked email addresses for users with administrator access</description>
+	</keyword>
+    </asset>
+    <asset type="Asset Listing Keywords">
+        <keyword id="%asset_contents%">
+            <description>Asset contents with paint layout. Note: doesn't work for shadow assets (eg. LDAP users) until 3.16.0.</description>
+        </keyword>
+        <keyword id="%asset_contents_raw%">
+            <description>Asset contents, no paint layout. Note: doesn't work for shadow assets (eg. LDAP users) until 3.16.0.</description>
+        </keyword>
+        <keyword id="%asset_contents_paint_X%">
+            <X>Paint layout name or asset id to use for contents listed when nesting asset listing</X>
+            <description>Asset contents, no paint layout</description>
+            <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.20.x-3.22.0RC1">3.22.0+</a>]]></version>
+        </keyword>
+        <keyword id="%list_current_asset_id%"></keyword> 
+    </asset>
+    <asset type="Custom Form Keywords">
+    	<keyword id="%form_summary_semantic%">
+		<type>asset</type>
+		<description></description>
+	    	<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.18.x-3.20.0RC1">3.20.0+</a>]]></version>
+	</keyword>
+    	<keyword id="%page_list%">
+		<type>asset</type>
+		<description></description>
+	    	<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.18.x-3.20.0RC1">3.20.0+</a>]]></version>
+	</keyword>
+    </asset>
+    <asset type="Image Keywords">
+        <keyword id="%asset_attribute_alt%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_attribute_caption%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_attribute_width%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_attribute_height%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_attribute_size%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_attribute_title%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_attribute_name%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_file_size_in_bytes%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%asset_file_size_readable%">
+            <type>asset</type>
+        </keyword>
+        <keyword id="%image_width%">
+            <description>Image width in pixels</description>
+            <type>asset</type>
+        </keyword>
+        <keyword id="%image_height%">
+            <description>Image height in pixels</description>
+            <type>asset</type>
+        </keyword>
+        <keyword id="%image_tag%">
+            <type>asset</type>
+        </keyword>
+    </asset>
+    <asset type="Image Variety Keywords">
+	<keyword id="%image_v_X%">
+		<type>asset</type>
+		<X>Variety name</X>
+		<description>Prints the Image Variety using an &lt;img&gt; tag</description>
+	</keyword>
+	<keyword id="%image_v_X_url%">
+            <type>asset</type>
+            <X>Variety name</X>
+        </keyword>
+        <keyword id="%image_v_X_width%">
+            <type>asset</type>
+            <X>Variety name</X>
+	    <description>Prints the Image Variety width in pixels.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.1-3.20.2">3.20.2+</a>]]></version>
+        </keyword>
+        <keyword id="%image_v_X_height%">
+            <type>asset</type>
+            <X>Variety name</X>
+	    <description>Prints the Image Variety height in pixels.</description>
+	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.1-3.20.2">3.20.2+</a>]]></version>
+        </keyword>
+    </asset>
+    <asset type="File Keywords">
+        <keyword id="%asset_attribute_title%"></keyword>
+        <keyword id="%asset_attribute_name%"></keyword>
+        <keyword id="%asset_file_size_in_bytes%"></keyword>
+        <keyword id="%asset_file_size_readable%"></keyword>
+    </asset>
+    <asset type="News Item Keywords">
+        <keyword id="%asset_attribute_summary%"></keyword>
+        <keyword id="%asset_attribute_body%"></keyword>
+        <keyword id="%asset_attribute_contact_name%"></keyword>
+        <keyword id="%asset_attribute_contact_phone%"></keyword>
+        <keyword id="%asset_attribute_show_headline%"></keyword>
+        <keyword id="%asset_attribute_show_summary%"></keyword>
+        <keyword id="%asset_attribute_show_body%"></keyword>
+        <keyword id="%asset_attribute_show_contact_name%"></keyword>
+        <keyword id="%asset_attribute_show_contact_phone%"></keyword>
+        <keyword id="%asset_attribute_short_name%"></keyword>
+        <keyword id="%asset_attribute_name%"></keyword>
+        <keyword id="%asset_name_linked_to_link_url%"></keyword>
+        <keyword id="%asset_attribute_link_url%"></keyword>
+        <keyword id="%asset_attribute_url_suffix%"></keyword>
+    </asset>
+    <asset type="Paint Layout Keywords">
+        <keyword id="%paint_layout%"></keyword>
+        <keyword id="%begin_X%">
+            <X>Keyword name on 'Conditional Keywords' screen of the type format</X>
+            <description>If paint layout condition met</description>
+        </keyword>
+        <keyword id="%else_X%">
+            <X>Keyword name on 'Conditional Keywords' screen of the type format</X>
+            <description>If paint layout condition not met</description>
+        </keyword>
+        <keyword id="%end_X%">
+            <X>Keyword name on 'Conditional Keywords' screen of the type format</X>
+            <description>End conditional paint layout content</description>
+        </keyword>
+    </asset>
+    <asset type="Standard Page Keywords">
+        <keyword id="%asset_attribute_short_name%"></keyword>
+        <keyword id="%asset_attribute_name%"></keyword>
+    </asset>
+    <asset type="Search Page Keywords">
+        <keyword id="%X_query%">
+            <X>Name of the search field as configured on the 'Search Fields' screen</X>
+            <description>Input box for search terms</description>
+        </keyword>
+        <keyword id="%X_query_logic%">
+            <X>Name of the search field as configured on the 'Search Fields' screen</X>
+            <description>Drop down logic chooser</description>
+        </keyword>
+        <keyword id="%X_query_terms%">
+            <X>Field name set on 'Search fields' screen</X>
+            <description>Show the search terms entered by the user</description>
+        </keyword>
+        <keyword id="%results_per_page%"></keyword>
+        <keyword id="%structured_root_node%"></keyword>
+        <keyword id="%submit_button%"></keyword>
+        <keyword id="%result_count%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%initial_result_count%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%category_list_linked%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%initial_layout%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%next_result_page_href%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%previous_result_page_href%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%next_result_page_link%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%previous_result_page_link%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%result_page_index%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%total_result_pages%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%current_result_page%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%current_result_page_end%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%result_list%">
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+        </keyword>
+        <keyword id="%page_list_X%">
+            <X>Last page number to print</X>
+            <onlyfor>'Results Page Layout' bodycopy</onlyfor>
+            <description>Sliding list of page numbers</description>
+        </keyword>
+        <keyword id="%X_query_synonyms_message%">
+            <X>Field name set on 'Search Fields' screen</X>
+        </keyword>
+        <keyword id="%X_query_synonyms%">
+            <X>Field name set on 'Search Fields' screen</X>
+        </keyword>
+        <keyword id="%X_query_suggestions_message%">
+            <X>Field name set on 'Search Fields' screen</X>
+        </keyword>
+        <keyword id="%X_query_suggestions%">
+            <X>Field name set on 'Search Fields' screen</X>
+        </keyword>
+        <keyword id="%X_query_synonym_search_message%">
+            <X>Field name set on 'Search Fields' screen</X>
+        </keyword>
+    </asset>
+    <asset type="Single Calendar Event Keywords">
+        <keyword id="%event_name%"></keyword>
+        <keyword id="%event_start_date%"></keyword>
+        <keyword id="%event_start_time_12h%"></keyword>
+        <keyword id="%event_start_time_24h%"></keyword>
+        <keyword id="%event_start_time_ical%"></keyword>
+        <keyword id="%event_end_date%"></keyword>
+        <keyword id="%event_end_time_12h%"></keyword>
+        <keyword id="%event_end_time_24h%"></keyword>
+        <keyword id="%event_short_start_time%"></keyword>
+        <keyword id="%event_short_end_time%"></keyword>
+        <keyword id="%event_end_time_ical%"></keyword>
+        <keyword id="%event_start_datetime%"></keyword>
+        <keyword id="%event_end_datetime%"></keyword>
+        <keyword id="%event_datetime_summary%"></keyword>
+        <keyword id="%event_duration%"></keyword>
+    </asset>
+    <asset type="User">
+    	<keyword id="%asset_attribute_email_image%">
+		<description>Prints the user's email address as an image.</description>
+            	<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.22.0rc1-3.22.0">3.22.0+</a>]]></version>
+	</keyword>
+    </asset>
+</assets>
