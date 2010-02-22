@@ -220,6 +220,10 @@
 		<description>Keyword of the linked asset.</description>
 		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
 	</keyword>
+	<keyword id="%link_relation%">
+		<description></description>
+		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
+	</keyword>
 	</asset>
 	<asset type="Asset Listing Keywords">
 		<keyword id="%asset_contents%">
