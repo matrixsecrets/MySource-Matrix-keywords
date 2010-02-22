@@ -470,10 +470,16 @@
 		<keyword id="%event_datetime_summary%"></keyword>
 		<keyword id="%event_duration%"></keyword>
 	</asset>
+	<asset type="Tag Listing Page">
+		<keyword id="%tag_size%">
+			<description>The combined tag weighting across the candidate assets.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
+		</keyword>
+	</asset>
 	<asset type="User">
 		<keyword id="%asset_attribute_email_image%">
-		<description>Prints the user's email address as an image.</description>
-				<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.22.0rc1-3.22.0">3.22.0+</a>]]></version>
-	</keyword>
+			<description>Prints the user's email address as an image.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.22.0rc1-3.22.0">3.22.0+</a>]]></version>
+		</keyword>
 	</asset>
 </assets>
