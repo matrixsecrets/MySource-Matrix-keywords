@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <assets>
+	<asset type="Common Asset Keywords">
+		<keyword id="%asset_assetid%">
+			<description>The unique ID of the current asset</description>
+		</keyword>
+		<keyword id="%asset_name%"><description></description></keyword>
+		<keyword id="%asset_short_name%"></keyword>
+		<keyword id="%asset_type%">
+			<description>Type code (eg. page_standard)</description>
+		</keyword>
+		<keyword id="%asset_url%">
+			<description>Full web address of the current asset</description>
+		</keyword>
+		<keyword id="%asset_href%">
+			<description>"Web path" of the current asset (ie. relative href/link)</description>
+		</keyword>
+		<keyword id="%asset_thumbnail%">
+			<description>IMG tag for the thumbnail for this asset</description>
+		</keyword>
+		<keyword id="%asset_thumbnail_alt%">
+			<description>ALT attribute of Thumbnail</description>
+		</keyword>
+		<keyword id="%asset_thumbnail_url%">
+			<description>URL to the image for the thumbnail for this asset</description>
+		</keyword>
+		<keyword id="%asset_thumbnail_caption%">
+			<description>Caption of the thumbnail for this asset</description>
+		</keyword>
+		<keyword id="%asset_metadata_X%">
+			<X>Metadata field name</X>
+		</keyword>
+		<keyword id="%metadata_field_X%">
+			<X>Value of another metadata field to insert into the current metadata field</X>
+			<description>Insert other metadata field value</description>
+		</keyword>
+	</asset>
 	<asset type="Anywhere (global) keywords">
 		<keyword id="%globals_X%">
 			<X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
@@ -84,39 +119,27 @@
 			<description>Keyword of referring asset</description>
 		</keyword>
 	</asset>
-	<asset type="Common Asset Keywords">
-		<keyword id="%asset_assetid%">
-			<description>The unique ID of the current asset</description>
+	<asset type="Keyword Modifiers">
+		<keyword id="%X^Y%">
+			<X>Keyword from 'Common Asset Keywords' or 'Less Common Asset Keywords'</X>
+			<Y>Modifier</Y>
+			<description>Allows the modification of an existing keyword.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
 		</keyword>
-		<keyword id="%asset_name%"><description></description></keyword>
-		<keyword id="%asset_short_name%"></keyword>
-		<keyword id="%asset_type%">
-			<description>Type code (eg. page_standard)</description>
+		<keyword id="%X^urlencode%">
+			<X>Keyword from 'Common Asset Keywords' or 'Less Common Asset Keywords'</X>
+			<description>URL encoded version of X.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
 		</keyword>
-		<keyword id="%asset_url%">
-			<description>Full web address of the current asset</description>
+		<keyword id="%X^uppercase%">
+			<X>Keyword from 'Common Asset Keywords' or 'Less Common Asset Keywords'</X>
+			<description>UPPERCASE version of X.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
 		</keyword>
-		<keyword id="%asset_href%">
-			<description>"Web path" of the current asset (ie. relative href/link)</description>
-		</keyword>
-		<keyword id="%asset_thumbnail%">
-			<description>IMG tag for the thumbnail for this asset</description>
-		</keyword>
-		<keyword id="%asset_thumbnail_alt%">
-			<description>ALT attribute of Thumbnail</description>
-		</keyword>
-		<keyword id="%asset_thumbnail_url%">
-			<description>URL to the image for the thumbnail for this asset</description>
-		</keyword>
-		<keyword id="%asset_thumbnail_caption%">
-			<description>Caption of the thumbnail for this asset</description>
-		</keyword>
-		<keyword id="%asset_metadata_X%">
-			<X>Metadata field name</X>
-		</keyword>
-		<keyword id="%metadata_field_X%">
-			<X>Value of another metadata field to insert into the current metadata field</X>
-			<description>Insert other metadata field value</description>
+		<keyword id="%X^charcount%">
+			<X>Keyword from 'Common Asset Keywords' or 'Less Common Asset Keywords'</X>
+			<description>Number of characters in X.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
 		</keyword>
 	</asset>
 	<asset type="Less Common Asset Keywords">
