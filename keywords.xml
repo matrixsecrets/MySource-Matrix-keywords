@@ -11,79 +11,78 @@
 			<description>A more specific version of %globals_X% used for asset attributes.</description>
 		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
 		</keyword>
-	<keyword id="%globals_asset_attribute_X:Y%">
-		<X>Any keyword in 'Attribute Keywords'</X>
-		<Y>A specific asset id</Y>
-		<description>A more specific version of %globals_asset_attribute_X% used for listing an asset attribute for the asset ID specified in Y.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
-	</keyword>
+		<keyword id="%globals_asset_attribute_X:Y%">
+			<X>Any keyword in 'Attribute Keywords'</X>
+			<Y>A specific asset id</Y>
+			<description>A more specific version of %globals_asset_attribute_X% used for listing an asset attribute for the asset ID specified in Y.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+		</keyword>
 		<keyword id="%globals_icon%">
-		<X>Asset type, eg. standard_page</X>
-				<description>Asset Map icon of asset type X.</description>
-				<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0RC1+</a>]]></version>
+			<X>Asset type, eg. standard_page</X>
+			<description>Asset Map icon of asset type X.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0RC1+</a>]]></version>
 		</keyword>
 		<keyword id="%globals_site_X%">
 			<X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
 			<description>A meta-keyword which allows you to list (nearly) any keyword for the current site.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
 		</keyword>
 		<keyword id="%globals_user_X%">
 			<X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
 			<description>A meta-keyword which allows you to list (nearly) any keyword for the current user</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
 		</keyword>
 		<keyword id="%globals_date_X%">
 			<X>PHP date format</X>
 			<description>Prints the current server date and time. Date and time can be formatted by replacing X with a <![CDATA[<a href="http://au2.php.net/date#function.date.parameters">PHP formatted</a> server date/time]]>, for example %globals_date_M% prints the three letter representation of the current month.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.1-3.20.2">3.20.2+</a>]]></version>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.1-3.20.2">3.20.2+</a>]]></version>
 		</keyword>
 		<keyword id="%globals_get_X%">
 			<X>Query string/get variable name (eg. ?X=something)</X>
 			<description>Non-array value of a GET variable.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
 		</keyword>
 		<keyword id="%globals_post_X%">
 			<X>POST variable name (ie. from the input of the submitting form)</X>
 			<description>Non-array value of a POST variable.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.18.x-3.20.0RC1">3.20.0+</a>]]></version>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.18.x-3.20.0RC1">3.20.0+</a>]]></version>
 		</keyword>
-	<keyword id="%globals_server_X%">
-		<X>PHP Server Variable</X>
-		<description><![CDATA[Value of <a href="http://php.net/manual/en/reserved.variables.server.php">PHP Server Variable</a>]]></description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
-	</keyword>
-	<keyword id="%globals_session_X%">
-		<X>Session variable name</X>
-		<description>Session var. from Matrix sandbox</description>
-	</keyword>
-	<keyword id="%globals_cookie_X%">
-		<X>Cookie variable name</X>
-		<description>Variable from the current user's cookies.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0+</a>]]></version>
-	</keyword>
-	<keyword id="%globals_random%">
-		<description>Random whole (integer) number.</description>
-	</keyword>
-	<keyword id="%globals_random_X_Y%">
-		<X>Start of the random number range</X>
-		<Y>End of the random number range</Y>
-		<description>Randomly generated number (X to Y). For example, to generate a random number from 1 to 10 use %globals_random_1_10%.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.20.x-3.22.0RC1">3.22.0+</a>]]></version>
-	</keyword>
-	<keyword id="%globals_asset_charset%">
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.5-3.20.6">3.20.6+</a>]]></version>
-	</keyword>
-	<keyword id="%globals_asset_languages%">
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.5-3.20.6">3.20.6+</a>]]></version>
-	</keyword>
-	<keyword id="%nested_asset_X%">
-		<X>Refer to any keyword of nested asset</X>
-	</keyword>
-	<keyword id="%referring_X%">
-		<X>Any keyword in 'Common Asset Keywords'</X>
-		<description>Keyword of referring asset</description>
-	</keyword>
-
+		<keyword id="%globals_server_X%">
+			<X>PHP Server Variable</X>
+			<description><![CDATA[Value of <a href="http://php.net/manual/en/reserved.variables.server.php">PHP Server Variable</a>]]></description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
+		</keyword>
+		<keyword id="%globals_session_X%">
+			<X>Session variable name</X>
+			<description>Session var. from Matrix sandbox</description>
+		</keyword>
+		<keyword id="%globals_cookie_X%">
+			<X>Cookie variable name</X>
+			<description>Variable from the current user's cookies.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0+</a>]]></version>
+		</keyword>
+		<keyword id="%globals_random%">
+			<description>Random whole (integer) number.</description>
+		</keyword>
+		<keyword id="%globals_random_X_Y%">
+			<X>Start of the random number range</X>
+			<Y>End of the random number range</Y>
+			<description>Randomly generated number (X to Y). For example, to generate a random number from 1 to 10 use %globals_random_1_10%.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.22.x/3.20.x-3.22.0RC1">3.22.0+</a>]]></version>
+		</keyword>
+		<keyword id="%globals_asset_charset%">
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.5-3.20.6">3.20.6+</a>]]></version>
+		</keyword>
+		<keyword id="%globals_asset_languages%">
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.20.x/3.20.5-3.20.6">3.20.6+</a>]]></version>
+		</keyword>
+		<keyword id="%nested_asset_X%">
+			<X>Refer to any keyword of nested asset</X>
+		</keyword>
+		<keyword id="%referring_X%">
+			<X>Any keyword in 'Common Asset Keywords'</X>
+			<description>Keyword of referring asset</description>
+		</keyword>
 	</asset>
 	<asset type="Common Asset Keywords">
 		<keyword id="%asset_assetid%">
@@ -112,13 +111,13 @@
 		<keyword id="%asset_thumbnail_caption%">
 			<description>Caption of the thumbnail for this asset</description>
 		</keyword>
-	<keyword id="%asset_metadata_X%">
-		<X>Metadata field name</X>
-	</keyword>
-	<keyword id="%metadata_field_X%">
-		<X>Value of another metadata field to insert into the current metadata field</X>
-		<description>Insert other metadata field value</description>
-	</keyword>
+		<keyword id="%asset_metadata_X%">
+			<X>Metadata field name</X>
+		</keyword>
+		<keyword id="%metadata_field_X%">
+			<X>Value of another metadata field to insert into the current metadata field</X>
+			<description>Insert other metadata field value</description>
+		</keyword>
 	</asset>
 	<asset type="Less Common Asset Keywords">
 		<keyword id="%asset_created_by_name%"></keyword>
@@ -131,15 +130,24 @@
 		<keyword id="%asset_thumbnail_v_X%">
 			<X>Variety name</X>
 		</keyword>
-	<keyword id="%asset_type_icon%">
-		<description>Asset Map icon of the current asset.</description>
-				<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0RC1+</a>]]></version>
-	</keyword>
+		<keyword id="%asset_type_icon%">
+			<description>Asset Map icon of the current asset.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0RC1+</a>]]></version>
+		</keyword>
 		<keyword id="%asset_updated_by_name%"></keyword>
 		<keyword id="%asset_version%"></keyword>
 		<keyword id="%asset_version_major%"></keyword>
 		<keyword id="%asset_version_minor%"></keyword>
 		<keyword id="%asset_version_micro%"></keyword>
+		<keyword id="%link_target_X%">
+			<X>Keyword probably from the list of 'Common Asset Keywords', eg. %link_target_name%.</X>
+			<description>Keyword of the linked asset.</description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
+		</keyword>
+		<keyword id="%link_relation%">
+			<description></description>
+			<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
+		</keyword>
 	</asset>
 	<asset type="Date Keywords">
 		<keyword id="%asset_created_X%">
@@ -214,15 +222,6 @@
 	</keyword>
 	<keyword id="%asset_admin_permission_email_linked%">
 		<description>Comma separated list of linked email addresses for users with administrator access</description>
-	</keyword>
-	<keyword id="%link_target_X%">
-		<X>Keyword probably from the list of 'Common Asset Keywords', eg. %link_target_name%.</X>
-		<description>Keyword of the linked asset.</description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
-	</keyword>
-	<keyword id="%link_relation%">
-		<description></description>
-		<version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.24.0-3.24.1">3.24.1+</a>]]></version>
 	</keyword>
 	</asset>
 	<asset type="Asset Listing Keywords">
