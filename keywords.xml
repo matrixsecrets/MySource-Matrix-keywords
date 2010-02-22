@@ -17,6 +17,11 @@
 		<description>A more specific version of %globals_asset_attribute_X% used for listing an asset attribute for the asset ID specified in Y.</description>
 	    <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.14.x/3.14.4-3.14.5">3.14.5+</a>]]></version>
 	</keyword>
+        <keyword id="%globals_icon%">
+		<X>Asset type, eg. standard_page</X>
+                <description>Asset Map icon of asset type X.</description>
+                <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0RC1+</a>]]></version>
+        </keyword>
         <keyword id="%globals_site_X%">
             <X>Any keyword in 'Common Asset Keywords' (without the 'asset_')</X>
             <description>A meta-keyword which allows you to list (nearly) any keyword for the current site.</description>
@@ -126,6 +131,10 @@
         <keyword id="%asset_thumbnail_v_X%">
             <X>Variety name</X>
         </keyword>
+	<keyword id="%asset_type_icon%">
+		<description>Asset Map icon of the current asset.</description>
+                <version><![CDATA[<a href="http://matrix.squiz.net/developer/changelogs/3.24.x/3.22.x-3.24.0RC1">3.24.0RC1+</a>]]></version>
+	</keyword>
         <keyword id="%asset_updated_by_name%"></keyword>
         <keyword id="%asset_version%"></keyword>
         <keyword id="%asset_version_major%"></keyword>
